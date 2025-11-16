@@ -8,12 +8,12 @@
     <div class="bg-gray-200 w-[15em] h-[21em] rounded-lg p-1.5 relative">
       <div class="flex items-center">
         <section>
-          <h1 class="bg-gray-100 px-1 w-28">Kael Berengar</h1>
+          <h1 class="px-1 w-28">Kael Berengar</h1>
           <div class="relative">
             <div
               class="z-10 bg-gray-300 text-[0.35rem] absolute -bottom-1.5 left-1.5 px-2 rounded-b-sm"
             >
-              Artificer
+              Artificer - Artillerist
             </div>
           </div>
         </section>
@@ -172,12 +172,12 @@
     <div class="bg-gray-200 w-[15em] h-[21em] rounded-lg p-1.5 relative">
       <div class="flex items-center">
         <section>
-          <h1 class="bg-gray-100 px-1 w-28">Kael Berengar</h1>
+          <h1 class="px-1 w-28">Kael Berengar</h1>
           <div class="relative">
             <div
               class="z-10 bg-gray-300 text-[0.35rem] absolute -bottom-1.5 left-1.5 px-2 rounded-b-sm"
             >
-              Artificer
+              Artificer - Artillerist
             </div>
           </div>
         </section>
@@ -205,136 +205,220 @@
         />
         <div class="absolute z-10 flex flex-col top-9 rounded-xs px-1 gap-2">
           <div
-            class="flex flex-col justify-center relative text-gray-400 w-6 h-6 text-center"
+            class="flex flex-col justify-center relative text-gray-400 w-[1.4em] h-[1.4em] text-center"
           >
-            <div class="leading-snug text-sm">15</div>
+            <div class="leading-snug text-xs">25</div>
             <div
-              class="absolute top-0 bg-gray-800 text-gray-400 rounded-xs w-6 h-6 text-center border-gray-300 border-2 border-solid rotate-45 -z-10"
+              class="absolute top-0 bg-gray-800 text-gray-400 rounded-xs w-[1.4em] h-[1.4em] text-center border-gray-300 border-2 border-solid rotate-45 -z-10"
             ></div>
           </div>
           <div
-            class="bg-gray-800 text-gray-400 rounded-xs w-6 h-6 text-center border-gray-300 border-2 border-solid leading-4"
+            class="flex flex-col justify-center bg-gray-800 text-gray-400 rounded-xs w-[1.4em] h-[1.4em] text-center border-gray-300 border-2 border-solid"
           >
-            <span class="text-[0.6rem] align-middle leading-3">+</span
-            ><span class="text-sm align-middle leading-3">3</span>
+            <p>
+              <span class="text-[0.5rem] align-middle leading-3">+</span
+              ><span class="text-xs align-middle leading-3">3</span>
+            </p>
           </div>
           <div
             class="bg-gray-800 text-gray-400 rounded-full w-6 h-6 text-center border-gray-300 border-2 border-solid"
           >
-            <div class="leading-snug text-sm">45</div>
+            <div class="leading-snug text-xs">45</div>
           </div>
         </div>
       </section>
       <section class="relative flex flex-row-reverse">
-        <h2 class="text-[0.25em] absolute -top-3 text-gray-300">
-          <abbr title="Statistics">Stats</abbr>
-        </h2>
-        <ol class="-mr-1.5 mt-0 flex-col flex gap-0.5">
-          <li
-            class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
+        <div class="absolute -top-6">
+          <div class="flex flex-row-reverse">
+            <h2
+              class="text-[0.3rem] text-right text-gray-600 bg-gray-200 mr-0.5 px-1 rounded-t-sm"
+            >
+              <abbr title="Statistics">Stats</abbr>
+            </h2>
+          </div>
+          <ol
+            class="-mr-1.5 mt-0 flex-col flex rounded-md gap-0.5 border-l-2 border-t-2 border-solid border-gray-200"
           >
-            <p class="uppercase text-xs text-gray-300 w-6">
-              <abbr class="no-underline" title="Strength">Str</abbr>
-            </p>
-            <div
-              class="rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[10em] h-[10em] text-center leading-4"
+            <li
+              class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
             >
-              <p class="">17</p>
-            </div>
-            <p
-              class="text-gray-900 text-sm bg-gray-300 rounded-xs p-[0.1em] w-5 text-center leading-2"
+              <p class="uppercase text-[0.5rem] text-gray-300 w-4">
+                <abbr class="no-underline" title="Strength">Str</abbr>
+              </p>
+              <div
+                class="flex flex-col justify-center rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[8em] h-[8em] text-center"
+              >
+                <p class="text-[0.4rem]">17</p>
+              </div>
+              <div
+                class="flex flex-col justify-center text-gray-900 bg-gray-300 rounded-xs w-5 h-3.5 text-center"
+              >
+                <p class="flex justify-center">
+                  <span class="text-[0.5rem] align-middle leading-3">+</span
+                  ><span class="align-middle leading-3 text-xs">3</span>
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
             >
-              <span class="text-[0.6rem] align-middle leading-3">+</span
-              ><span class="align-middle leading-3">3</span>
-            </p>
-          </li>
-          <li
-            class="flex bg-gray-700 items-center gap-1 rounded-r-sm pl-1 pr-[0.2em] py-0.5 w-fit"
-          >
-            <p class="uppercase text-xs text-gray-300 w-6">
-              <abbr class="no-underline" title="Strength">DEX</abbr>
-            </p>
-            <div
-              class="rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[10em] h-[10em] text-center leading-4"
+              <p class="uppercase text-[0.5rem] text-gray-300 w-4">
+                <abbr class="no-underline" title="Strength">Str</abbr>
+              </p>
+              <div
+                class="flex flex-col justify-center rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[8em] h-[8em] text-center"
+              >
+                <p class="text-[0.4rem]">17</p>
+              </div>
+              <div
+                class="flex flex-col justify-center text-gray-900 bg-gray-300 rounded-xs w-5 h-3.5 text-center"
+              >
+                <p class="flex justify-center">
+                  <span class="text-[0.5rem] align-middle leading-3">+</span
+                  ><span class="align-middle leading-3 text-xs">3</span>
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
             >
-              <p class="">20</p>
-            </div>
-            <p
-              class="text-gray-900 text-sm bg-gray-300 rounded-xs p-[0.1em] leading-3 w-5 text-center"
+              <p class="uppercase text-[0.5rem] text-gray-300 w-4">
+                <abbr class="no-underline" title="Strength">Str</abbr>
+              </p>
+              <div
+                class="flex flex-col justify-center rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[8em] h-[8em] text-center"
+              >
+                <p class="text-[0.4rem]">17</p>
+              </div>
+              <div
+                class="flex flex-col justify-center text-gray-900 bg-gray-300 rounded-xs w-5 h-3.5 text-center"
+              >
+                <p class="flex justify-center">
+                  <span class="text-[0.5rem] align-middle leading-3">+</span
+                  ><span class="align-middle leading-3 text-xs">3</span>
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
             >
-              +4
-            </p>
-          </li>
-          <li
-            class="flex bg-gray-700 items-center gap-1 rounded-r-sm pl-1 pr-[0.2em] py-0.5 w-fit"
-          >
-            <p class="uppercase text-xs text-gray-300 w-6">
-              <abbr class="no-underline" title="Strength">CON</abbr>
-            </p>
-            <div
-              class="rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[10em] h-[10em] text-center leading-4"
+              <p class="uppercase text-[0.5rem] text-gray-300 w-4">
+                <abbr class="no-underline" title="Strength">Str</abbr>
+              </p>
+              <div
+                class="flex flex-col justify-center rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[8em] h-[8em] text-center"
+              >
+                <p class="text-[0.4rem]">17</p>
+              </div>
+              <div
+                class="flex flex-col justify-center text-gray-900 bg-gray-300 rounded-xs w-5 h-3.5 text-center"
+              >
+                <p class="flex justify-center">
+                  <span class="text-[0.5rem] align-middle leading-3">+</span
+                  ><span class="align-middle leading-3 text-xs">3</span>
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
             >
-              <p class="">5</p>
-            </div>
-            <p
-              class="text-gray-900 text-sm bg-gray-300 rounded-xs p-[0.1em] leading-3 w-5 text-center"
+              <p class="uppercase text-[0.5rem] text-gray-300 w-4">
+                <abbr class="no-underline" title="Strength">Str</abbr>
+              </p>
+              <div
+                class="flex flex-col justify-center rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[8em] h-[8em] text-center"
+              >
+                <p class="text-[0.4rem]">17</p>
+              </div>
+              <div
+                class="flex flex-col justify-center text-gray-900 bg-gray-300 rounded-xs w-5 h-3.5 text-center"
+              >
+                <p class="flex justify-center">
+                  <span class="text-[0.5rem] align-middle leading-3">+</span
+                  ><span class="align-middle leading-3 text-xs">3</span>
+                </p>
+              </div>
+            </li>
+            <li
+              class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
             >
-              0
-            </p>
-          </li>
-          <li
-            class="flex bg-gray-700 items-center gap-1 rounded-r-sm pl-1 pr-[0.2em] py-0.5 w-fit"
-          >
-            <p class="uppercase text-xs text-gray-300 w-6">
-              <abbr class="no-underline" title="Strength">INT</abbr>
-            </p>
-            <div
-              class="rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[10em] h-[10em] text-center leading-4"
-            >
-              <p class="">5</p>
-            </div>
-            <p
-              class="text-gray-900 text-sm bg-gray-300 rounded-xs p-[0.1em] leading-3 w-5 text-center"
-            >
-              0
-            </p>
-          </li>
-          <li
-            class="flex bg-gray-700 items-center gap-1 rounded-r-sm pl-1 pr-[0.2em] py-0.5 w-fit"
-          >
-            <p class="uppercase text-xs text-gray-300 w-6">
-              <abbr class="no-underline" title="Strength">WIS</abbr>
-            </p>
-            <div
-              class="rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[10em] h-[10em] text-center leading-4"
-            >
-              <p class="">5</p>
-            </div>
-            <p
-              class="text-gray-900 text-sm bg-gray-300 rounded-xs p-[0.1em] leading-3 w-5 text-center"
-            >
-              0
-            </p>
-          </li>
-          <li
-            class="flex bg-gray-700 items-center gap-1 rounded-l-sm pl-1 pr-[0.2em] py-0.5 w-fit"
-          >
-            <p class="uppercase text-xs text-gray-300 w-6">
-              <abbr class="no-underline" title="Strength">CHA</abbr>
-            </p>
-            <div
-              class="rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[10em] h-[10em] text-center leading-4"
-            >
-              <p class="">3</p>
-            </div>
-            <p
-              class="text-gray-900 text-sm bg-gray-300 rounded-xs p-[0.1em] leading-3 w-5 text-center"
-            >
-              -4
-            </p>
-          </li>
-        </ol>
+              <p class="uppercase text-[0.5rem] text-gray-300 w-4">
+                <abbr class="no-underline" title="Strength">Str</abbr>
+              </p>
+              <div
+                class="flex flex-col justify-center rounded-full bg-gray-900 text-gray-400 text-[0.1em] w-[8em] h-[8em] text-center"
+              >
+                <p class="text-[0.4rem]">17</p>
+              </div>
+              <div
+                class="flex flex-col justify-center text-gray-900 bg-gray-300 rounded-xs w-5 h-3.5 text-center"
+              >
+                <p class="flex justify-center">
+                  <span class="text-[0.5rem] align-middle leading-3">+</span
+                  ><span class="align-middle leading-3 text-xs">3</span>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
       </section>
+      <section class="my-1">
+        <ul class="text-[0.4rem] text-gray-800">
+          <li class="mb-0.5">
+            <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs"
+              >Magical Tinkering</span
+            >
+            - Invest <b>3</b> tiny items <b>1 Actn</b>
+            <ul class="ml-1">
+              <li>
+                light 5ft/5ft, message 10ft/6s, <br />
+                odor/sound 10ft, image 25 words
+              </li>
+            </ul>
+          </li>
+          <li class="mb-0.5">
+            <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs">
+              Artificer infusions</span
+            >
+            - Known/limit (<b>6</b>/<b>3</b>)
+            <ul class="ml-1">
+              <li>
+                Homunculous Servant, Enhanced Arcane Focus, <br />
+                Returning Weapon, Mind Sharpener, <br />
+                Spell-Refueling Ring, Boots of the Winding Path
+              </li>
+            </ul>
+          </li>
+          <li class="mb-0.5">
+            <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs"
+              >Eldrich Cannon</span
+            >&nbsp;- <b>AC18</b><b>/HP30</b>
+            <ul class="ml-1">
+              <li>
+                Flamethrower - 15ft cone, DC save, 2d8 fire 1/2 <br />
+                on save
+              </li>
+              <li>Force Ballista - 120ft, RSA, 2d8 force, push 5ft</li>
+              <li>Protector - 10ft, Temp HP 1d8 + INT</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <div
+        class="absolute flex justify-center items-center bg-gray-300 text-gray-800 text-sm bottom-1 right-1 leading-tight rounded-full w-7 h-7"
+      >
+        <div>53</div>
+        <div
+          class="absolute flex justify-center items-center h-3.5 w-3.5 -top-2 right-0.5 text-[0.4rem] bg-gray-300 rounded-full"
+        >
+          D10
+        </div>
+        <div
+          class="absolute flex justify-center items-center h-3.5 w-3.5 -top-2 left-0 text-[0.4rem] bg-gray-300 rounded-full"
+        >
+          8
+        </div>
+      </div>
     </div>
   </body>
 </html>
