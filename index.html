@@ -59,7 +59,7 @@
           </div>
         </div>
       </section>
-      <section class="relative">
+      <aside class="relative">
         <h2 class="text-[0.25em] absolute -top-3 text-gray-300">
           <abbr title="Statistics">Stats</abbr>
         </h2>
@@ -167,7 +167,7 @@
             </p>
           </li>
         </ol>
-      </section>
+      </aside>
     </div>
     <div class="bg-gray-200 w-[15em] h-[21em] rounded-lg p-1.5 relative">
       <div class="flex items-center">
@@ -220,33 +220,29 @@
           <div
             class="relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid"
           >
-            <div
-              class="text-gray-400 flex justify-center items-center"
-            >
+            <div class="text-gray-400 flex justify-center items-center">
               <span class="text-[0.5rem] align-middle">+</span
               ><span class="text-xs align-middle">3</span>
-
             </div>
-              <div
-                class="absolute z-50 text-gray-400 text-[0.25rem]  -bottom-[0.025rem] w-full"
-              >
-                <abbr class="no-underline" title="Initative">Init</abbr>
-              </div>
+            <div
+              class="absolute z-50 text-gray-400 text-[0.25rem] -bottom-[0.025rem] w-full"
+            >
+              <abbr class="no-underline" title="Initative">Init</abbr>
+            </div>
           </div>
           <div
             class="relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid"
           >
-            <div
-              class="text-gray-400 flex justify-center items-center"
-            >
+            <div class="text-gray-400 flex justify-center items-center">
               <span class="text-xs align-middle">60</span>
             </div>
-              <div
-                class="absolute z-50 text-gray-400 text-[0.25rem]  -bottom-[0.025rem] w-full"
-              >
-                <abbr class="no-underline" title="Initative">Speed</abbr>
-              </div>
+            <div
+              class="absolute z-50 text-gray-400 text-[0.25rem] -bottom-[0.025rem] w-full"
+            >
+              <abbr class="no-underline" title="Initative">Speed</abbr>
+            </div>
           </div>
+        </div>
       </section>
       <section class="relative flex flex-row-reverse">
         <div class="absolute -top-6">
@@ -426,19 +422,25 @@
         </ul>
       </section>
       <div
-        class="absolute flex justify-center items-center bg-gray-300 text-gray-800 text-sm bottom-1 right-1 leading-tight rounded-full w-7 h-7"
+        class="absolute flex gap-0.5 items-center justify-start bg-gray-100 bottom-1 right-5 rounded-l-md w-9 h-8 border-2 border-gray-100 border-solid"
       >
-        <div>53</div>
-        <div
-          class="absolute flex justify-center items-center h-3.5 w-3.5 -top-2 right-0.5 text-[0.4rem] bg-gray-300 rounded-full"
+        <p
+          class="[writing-mode:sideways-lr] [text-orientation:mixed] text-[0.3rem]"
         >
-          D10
+          hit die
+        </p>
+        <div class="flex flex-col justify-center items-center">
+          <p class="leading-2 text-[0.6rem]">6</p>
+          <p class="leading-2 text-[0.3rem]">D8</p>
         </div>
-        <div
-          class="absolute flex justify-center items-center h-3.5 w-3.5 -top-2 left-0 text-[0.4rem] bg-gray-300 rounded-full"
-        >
-          8
-        </div>
+        <p class="flex-grow"></p>
+      </div>
+      <div
+        class="absolute flex justify-center items-center bg-gray-300 text-gray-800 text-sm bottom-1 right-1 leading-tight rounded-full w-8 h-8 border-2 border-gray-100 border-solid"
+      >
+        <p>
+          53<span class="text-[0.25rem]"><abbr>hp</abbr></span>
+        </p>
       </div>
     </div>
   </body>
