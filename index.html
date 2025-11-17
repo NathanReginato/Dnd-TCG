@@ -172,7 +172,7 @@
     <div class="bg-gray-200 w-[15em] h-[21em] rounded-lg p-1.5 relative">
       <div class="flex items-center">
         <section>
-          <h1 class="px-1 w-28">Kael Berengar</h1>
+          <h1 class="pr-1 w-28">Kael Berengar</h1>
           <div class="relative">
             <div
               class="z-10 bg-gray-300 text-[0.35rem] absolute -bottom-1.5 left-1.5 px-2 rounded-b-sm"
@@ -189,43 +189,64 @@
       </div>
 
       <div
-        class="bg-gray-600 absolute rounded-full right-2 top-2 w-6 h-6 border-2 border-gray-200 border-solid text-center leading-4 z-10"
+        class="bg-gray-600 absolute flex justify-center items-center rounded-full right-1 top-2 w-7 h-7 border-2 border-gray-200 border-solid text-center leading-4 z-10"
       >
         <abbr
-          class="px-[0.5em] py-0.5 absolute -left-2.5 -top-0.5 bg-gray-800 rounded-full text-[0.3rem] border border-gray-200 border-solid text-gray-200 leading-snug"
+          class="px-[0.5em] py-0.5 absolute -left-2 -top-1 bg-gray-800 rounded-full text-[0.3rem] border border-gray-200 border-solid text-gray-200 leading-snug"
           title="Level"
           >lvl</abbr
         >
-        <span class="text-xs text-gray-200 font-bold">19</span>
+        <span class="text-xs text-gray-300 font-bold">6</span>
       </div>
       <section class="relative">
         <image
           class="rounded-sm h-40"
           src="https://images.unsplash.com/photo-1680849112206-a0a04fdc168d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
-        <div class="absolute z-10 flex flex-col top-9 rounded-xs px-1 gap-2">
+        <div class="absolute z-10 flex flex-col top-4 rounded-xs px-2 gap-2">
           <div
-            class="flex flex-col justify-center relative text-gray-400 w-[1.4em] h-[1.4em] text-center"
+            class="flex flex-col justify-center text-gray-400 w-[1.5em] h-[1.5em] text-center"
           >
-            <div class="leading-snug text-xs">25</div>
+            <div class="relative leading-snug text-xs">
+              25
+              <div class="absolute z-50 text-[0.25rem] -bottom-[0.2rem] w-full">
+                <abbr class="no-underline" title="Armor Class">AC</abbr>
+              </div>
+            </div>
             <div
-              class="absolute top-0 bg-gray-800 text-gray-400 rounded-xs w-[1.4em] h-[1.4em] text-center border-gray-300 border-2 border-solid rotate-45 -z-10"
+              class="absolute top-0 bg-gray-800 text-gray-400 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid rotate-45 -z-10"
             ></div>
           </div>
           <div
-            class="flex flex-col justify-center bg-gray-800 text-gray-400 rounded-xs w-[1.4em] h-[1.4em] text-center border-gray-300 border-2 border-solid"
+            class="relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid"
           >
-            <p>
-              <span class="text-[0.5rem] align-middle leading-3">+</span
-              ><span class="text-xs align-middle leading-3">3</span>
-            </p>
+            <div
+              class="text-gray-400 flex justify-center items-center"
+            >
+              <span class="text-[0.5rem] align-middle">+</span
+              ><span class="text-xs align-middle">3</span>
+
+            </div>
+              <div
+                class="absolute z-50 text-gray-400 text-[0.25rem]  -bottom-[0.025rem] w-full"
+              >
+                <abbr class="no-underline" title="Initative">Init</abbr>
+              </div>
           </div>
           <div
-            class="bg-gray-800 text-gray-400 rounded-full w-6 h-6 text-center border-gray-300 border-2 border-solid"
+            class="relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid"
           >
-            <div class="leading-snug text-xs">45</div>
+            <div
+              class="text-gray-400 flex justify-center items-center"
+            >
+              <span class="text-xs align-middle">60</span>
+            </div>
+              <div
+                class="absolute z-50 text-gray-400 text-[0.25rem]  -bottom-[0.025rem] w-full"
+              >
+                <abbr class="no-underline" title="Initative">Speed</abbr>
+              </div>
           </div>
-        </div>
       </section>
       <section class="relative flex flex-row-reverse">
         <div class="absolute -top-6">
@@ -368,7 +389,7 @@
             <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs"
               >Magical Tinkering</span
             >
-            - Invest <b>3</b> tiny items <b>1 Actn</b>
+            - Invest <b>3</b> tiny items <b>Actn</b>
             <ul class="ml-1">
               <li>
                 light 5ft/5ft, message 10ft/6s, <br />
@@ -392,7 +413,7 @@
           <li class="mb-0.5">
             <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs"
               >Eldrich Cannon</span
-            >&nbsp;- <b>AC18</b><b>/HP30</b>
+            >&nbsp;- <b>AC18</b>/<b>HP30</b> deploy <b>Actn</b>
             <ul class="ml-1">
               <li>
                 Flamethrower - 15ft cone, DC save, 2d8 fire 1/2 <br />
