@@ -1,10 +1,10 @@
 const addAsideRootEl = addEl(root("aside"));
 
 const aside = (ac, iniative, speed) =>
-  _.div("absolute z-10 flex flex-col top-4 rounded-xs px-2 gap-2")
+  _.div("absolute z-10 flex flex-col top-8 rounded-xs px-2 gap-2")
     .ap(
       _.div(
-        "flex flex-col justify-center text-gray-400 w-[1.5em] h-[1.5em] text-center",
+        "flex flex-col justify-center text-gray-300 w-[1.5em] h-[1.5em] text-center",
       )
         .ap(
           _.div("relative leading-snug text-xs")
@@ -17,37 +17,37 @@ const aside = (ac, iniative, speed) =>
         )
         .ap(
           _.div(
-            "absolute top-0 bg-gray-800 text-gray-400 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid rotate-45 -z-10",
+            "absolute top-0 bg-gray-700 text-gray-300 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid rotate-45 -z-10",
           ),
         ),
     )
     .ap(
       _.div(
-        "relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid",
+        "relative flex justify-center items-center bg-gray-700 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid",
       )
         .ap(
-          _.div("text-gray-400 flex justify-center items-center")
+          _.div("text-gray-300 flex justify-center items-center")
             .ap(_.span("text-[0.5rem] align-middle", "+"))
             .ap(_.span("text-xs align-middle", iniative)),
         )
         .ap(
           _.div(
-            "absolute z-50 text-gray-400 text-[0.25rem] -bottom-[0.025rem] w-full",
+            "absolute z-50 text-gray-300 text-[0.25rem] -bottom-[0.025rem] w-full",
           ).ap(_.abbr("no-underline", "Init", "Initative")),
         ),
     )
     .ap(
       _.div(
-        "relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid",
+        "relative flex justify-center items-center bg-gray-700 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid",
       )
         .ap(
-          _.div("text-gray-400 flex justify-center items-center").ap(
+          _.div("text-gray-300 flex justify-center items-center").ap(
             _.span("text-xs align-middle", speed),
           ),
         )
         .ap(
           _.div(
-            "absolute z-50 text-gray-400 text-[0.25rem] -bottom-[0.025rem] w-full",
+            "absolute z-50 text-gray-300 text-[0.25rem] -bottom-[0.025rem] w-full",
           ).ap(_.span("no-underline", "Speed")),
         ),
     );

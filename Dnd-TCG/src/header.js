@@ -28,11 +28,11 @@ const header = (name, className, specialization, race, background, level) =>
     )
     .ap(
       _.div(
-        "bg-gray-600 absolute flex justify-center items-center rounded-full right-1 top-2 w-7 h-7 border-2 border-gray-200 border-solid text-center leading-4 z-10",
+        "bg-gray-600 absolute flex justify-center items-center rounded-full right-1 top-2 w-7 h-7 border-2 border-gray-900 border-solid text-center leading-4 z-10",
       )
         .ap(
           _.abbr(
-            "px-[0.5em] py-0.5 absolute -left-2 -top-1 bg-gray-800 rounded-full text-[0.3rem] border border-gray-200 border-solid text-gray-200 leading-snug",
+            "px-[0.5em] py-0.5 absolute -left-2 -top-1 bg-gray-500 rounded-full text-[0.3rem] border border-gray-900 border-solid text-gray-200 leading-snug",
             "lvl",
           ),
         )
