@@ -216,6 +216,8 @@
   },
   "active": "f5a88769663c4ced",
   "lastOpenFiles": [
+    "src/data.js~",
+    "src/header.js~",
     "index.html~",
     "src/aside.js",
     "src/header.js",
@@ -225,11 +227,9 @@
     "src/data.js",
     "src/utils.js",
     "src",
-    "card.js~",
     "Journal Entries/2025-11-22.md",
     "Journal Entries/New Journal Entry.md",
     "Journal Entries/2025-11-20.md",
-    "Journal Entries",
     "An Experiment.md",
     "Welcome.md"
   ]

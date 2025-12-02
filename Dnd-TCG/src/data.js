@@ -4,7 +4,7 @@ const player = {
   race: "Harringon",
   class: ["Bard"],
   specialization: ["Swashbuckler"],
-  background: "Guild Artisan",
+  background: "Celebrity Adventurer's Scion",
   alignment: "C/N",
   stats: [17, 12, 16, 19, 10, 9],
   proficientcies: ["Arc", "Inv"],
