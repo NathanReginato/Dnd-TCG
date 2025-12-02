@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dnd-TCG</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dosis:wght@200..800&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-5 flex gap-5 w-[20000px]">
+    <!-- class -->
+    <div
+      class="bg-gray-200 w-[15em] h-[21em] rounded-lg p-1.5 relative [font-family:'Cormorant Garamond']"
+    >
+      <div id="header"></div>
+      <section id="aside" class="relative">
+        <image
+          class="rounded-sm h-40"
+          src="https://images.unsplash.com/photo-1680849112206-a0a04fdc168d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </section>
+      <section class="relative flex flex-row-reverse">
+        <div class="absolute -top-6">
+          <div class="flex flex-row-reverse">
+            <h2
+              class="text-[0.3rem] text-right text-gray-600 bg-gray-200 mr-0.5 px-1 rounded-t-sm"
+            >
+              <abbr title="Statistics">Stats</abbr>
+            </h2>
+          </div>
+          <ol
+            id="stats"
+            class="-mr-1.5 mt-0 flex-col flex rounded-md gap-0.5 border-l-2 border-y-2 border-solid border-gray-200 bg-gray-200"
+          ></ol>
+        </div>
+      </section>
+      <section class="my-1.5 bg-gray-50 p-1 rounded-sm">
+        <ul class="text-[0.4rem] text-gray-800">
+          <li class="mb-0.5">
+            <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs"
+              >Magical Tinkering</span
+            >
+            - Invest <b>3</b> tiny items <b>Actn</b>
+            <ul class="ml-1">
+              <li>
+                light 5ft/5ft, message 10ft/6s, <br />
+                odor/sound 10ft, image 25 words
+              </li>
+            </ul>
+          </li>
+          <li class="mb-0.5">
+            <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs">
+              Artificer infusions</span
+            >
+            - Known/limit (<b>6</b>/<b>3</b>)
+            <ul class="ml-1">
+              <li>
+                Homunculous Servant, Enhanced Arcane Focus, <br />
+                Returning Weapon, Mind Sharpener, <br />
+                Spell-Refueling Ring, Boots of the Winding Path
+              </li>
+            </ul>
+          </li>
+          <li class="mb-0.5">
+            <span class="bg-gray-600 text-gray-200 px-0.5 rounded-xs"
+              >Eldrich Cannon</span
+            >&nbsp;- <b>AC18</b>/<b>HP30</b> deploy <b>Actn</b>
+            <ul class="ml-1">
+              <li>
+                Flamethrower - 15ft cone, DC save, 2d8 fire 1/2 <br />
+                on save
+              </li>
+              <li>Force Ballista - 120ft, RSA, 2d8 force, push 5ft</li>
+              <li>Protector - 10ft, Temp HP 1d8 + INT</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <div
+        class="absolute flex gap-0.5 items-center justify-start bg-gray-100 bottom-1 right-5 rounded-l-md w-9 h-8 border-2 border-gray-100 border-solid"
+      >
+        <p
+          class="[writing-mode:sideways-lr] [text-orientation:mixed] text-[0.3rem]"
+        >
+          hit die
+        </p>
+        <div class="flex flex-col justify-center items-center">
+          <p class="leading-2 text-[0.6rem]">6</p>
+          <p class="leading-2 text-[0.3rem]">D8</p>
+        </div>
+        <p class="flex-grow"></p>
+      </div>
+      <div
+        class="absolute flex justify-center items-center bg-gray-300 text-gray-800 text-sm bottom-1 right-1 leading-tight rounded-full w-8 h-8 border-2 border-gray-100 border-solid"
+      >
+        <p>
+          53<span class="text-[0.25rem]"><abbr>hp</abbr></span>
+        </p>
+      </div>
+      <footer class="absolute bottom-1 text-[0.25rem]">
+        Nathan Reginato © 2025
+      </footer>
+    </div>
+
+    <!-- class ext -->
+
+    <div
+      class="bg-gray-200 w-[15em] h-[21em] rounded-lg p-1.5 relative [font-family:'Cormorant Garamond']"
+    >
+      <div class="flex items-center">
+        <section>
+          <h1 class="pr-1 w-28">Kael Berengar</h1>
+          <div class="relative">
+            <div
+              class="z-10 bg-gray-300 text-[0.35rem] absolute -bottom-1.5 left-1.5 px-2 rounded-b-sm"
+            >
+              Artificer - Artillerist
+            </div>
+          </div>
+        </section>
+        <div class="flex flex-col px-1">
+          <div class="text-[0.35rem]">Halfling</div>
+          <hr />
+          <div class="text-[0.35rem]">Celebrity Adventurer's Scion</div>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-600 absolute flex justify-center items-center rounded-full right-1 top-2 w-7 h-7 border-2 border-gray-200 border-solid text-center leading-4 z-10"
+      >
+        <abbr
+          class="px-[0.5em] py-0.5 absolute -left-2 -top-1 bg-gray-800 rounded-full text-[0.3rem] border border-gray-200 border-solid text-gray-200 leading-snug"
+          title="Level"
+          >lvl</abbr
+        >
+        <span class="text-xs text-gray-300 font-bold">6</span>
+      </div>
+      <section class="relative">
+        <image
+          class="rounded-sm h-40"
+          src="https://images.unsplash.com/photo-1680849112206-a0a04fdc168d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <div class="absolute z-10 flex flex-col top-4 rounded-xs px-2 gap-2">
+          <div
+            class="flex flex-col justify-center text-gray-400 w-[1.5em] h-[1.5em] text-center"
+          >
+            <div class="relative leading-snug text-xs">
+              25
+              <div class="absolute z-50 text-[0.25rem] -bottom-[0.2rem] w-full">
+                <abbr class="no-underline" title="Armor Class">AC</abbr>
+              </div>
+            </div>
+            <div
+              class="absolute top-0 bg-gray-800 text-gray-400 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid rotate-45 -z-10"
+            ></div>
+          </div>
+          <div
+            class="relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid"
+          >
+            <div class="text-gray-400 flex justify-center items-center">
+              <span class="text-[0.5rem] align-middle">+</span
+              ><span class="text-xs align-middle">3</span>
+            </div>
+            <div
+              class="absolute z-50 text-gray-400 text-[0.25rem] -bottom-[0.025rem] w-full"
+            >
+              <abbr class="no-underline" title="Initative">Init</abbr>
+            </div>
+          </div>
+          <div
+            class="relative flex justify-center items-center bg-gray-800 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid"
+          >
+            <div class="text-gray-400 flex justify-center items-center">
+              <span class="text-xs align-middle">60</span>
+            </div>
+            <div
+              class="absolute z-50 text-gray-400 text-[0.25rem] -bottom-[0.025rem] w-full"
+            >
+              <abbr class="no-underline" title="Initative">Speed</abbr>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative flex">
+        <div id="skills-saves" class="absolute -top-6">
+          <div class="flex flex-row-reverse">
+            <h2
+              class="text-[0.3rem] text-left text-gray-600 bg-gray-200 mr-0.5 px-1 rounded-t-sm"
+            >
+              <abbr title="Statistics">Skills</abbr>
+            </h2>
+            <h2
+              class="text-[0.3rem] text-left text-gray-600 bg-gray-200 mr-0.5 px-1 rounded-t-sm"
+            >
+              <abbr title="Statistics">Saving Throws</abbr>
+            </h2>
+          </div>
+          <ol
+            id="skills"
+            class="-ml-1.5 mt-0 flex-col flex rounded-md gap-0.5 border-r-2 border-y-2 border-solid border-gray-200 bg-gray-200"
+          ></ol>
+        </div>
+      </section>
+      <section class="my-1.5 bg-gray-50 p-1 rounded-sm h-32"></section>
+      <div
+        class="absolute flex gap-0.5 items-center justify-start bg-gray-100 bottom-1 right-5 rounded-r-md w-9 h-8 border-2 border-gray-100 border-solid"
+      >
+        <p
+          class="[writing-mode:sideways-lr] [text-orientation:mixed] text-[0.3rem]"
+        >
+          hit die
+        </p>
+        <div class="flex flex-col justify-center items-center">
+          <p class="leading-2 text-[0.6rem]">6</p>
+          <p class="leading-2 text-[0.3rem]">D8</p>
+        </div>
+        <p class="flex-grow"></p>
+      </div>
+      <div
+        class="absolute flex justify-center items-center bg-gray-300 text-gray-800 text-sm bottom-1 right-1 leading-tight rounded-full w-8 h-8 border-2 border-gray-100 border-solid"
+      >
+        <p>
+          53<span class="text-[0.25rem]"><abbr>hp</abbr></span>
+        </p>
+      </div>
+      <footer class="absolute bottom-1 text-[0.25rem]">
+        Nathan Reginato © 2025
+      </footer>
+    </div>
+
+    <!-- Spell -->
+
+    <div
+      class="bg-gray-900 w-[15em] h-[21em] rounded-lg p-1.5 relative [font-family:'Cormorant Garamond']"
+    >
+      <div class="flex items-center">
+        <section>
+          <h1 class="pr-1 w-28 text-gray-100">Scorching Ray</h1>
+        </section>
+      </div>
+
+      <section class="relative">
+        <image
+          class="rounded-sm h-40 border-2 border-gray-400 border-solid"
+          src="https://images.unsplash.com/photo-1461484261293-7175bb44e871?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <div
+          class="absolute z-10 flex flex-col top-4 rounded-xs px-2 gap-2"
+        ></div>
+      </section>
+      <section class="relative my-1.5 bg-gray-200 p-1 rounded-sm h-32">
+        <p class="text-[0.4rem] text-gray-800">
+          You create three rays of fire and hurl them at targets within range.
+          You can hurl them at one target or several. Make a ranged spell attack
+          for each ray. On a hit, the target takes 2d6 fire damage. At Higher
+          Levels. When you cast this spell using a spell slot of 3rd level or
+          higher, you create one additional ray for each slot level above 2nd.
+        </p>
+        <div
+          class="absolute flex -top-3.5 -right-0.5 bg-red-200 rounded-xs justify-center items-center"
+        >
+          <div class="text-xs px-1">2d6 Fire ×3+</div>
+        </div>
+        <div
+          class="absolute flex -bottom-0.5 -right-0.5 bg-red-200 rounded-full h-7 w-7 justify-center items-center"
+        >
+          <div class="text-sm">2nd+</div>
+        </div>
+      </section>
+      <footer class="absolute bottom-1 text-[0.25rem] text-gray-100">
+        Nathan Reginato © 2025 | Illus. unsplash
+      </footer>
+    </div>
+    <script src="./src/utils.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/header.js"></script>
+    <script src="./src/aside.js"></script>
+    <script src="./src/stats.js"></script>
+    <script src="./src/skills.js"></script>
+    <script src="./src/render.js"></script>
+  </body>
+</html>
