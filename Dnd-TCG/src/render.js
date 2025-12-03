@@ -9,6 +9,7 @@ addHeaderRootEl(
       player.race,
       player.background,
       player.level,
+      player.alignment,
     ),
   ),
 );

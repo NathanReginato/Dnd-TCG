@@ -1,6 +1,14 @@
 const addHeaderRootEl = addEl(root("header"));
 
-const header = (name, className, specialization, race, background, level) =>
+const header = (
+  name,
+  className,
+  specialization,
+  race,
+  background,
+  level,
+  alignment,
+) =>
   _.div("flex items-center justify-between")
     .ap(
       _.section()
@@ -12,7 +20,7 @@ const header = (name, className, specialization, race, background, level) =>
         .ap(
           _.div("relative").ap(
             _.div(
-              "z-10 bg-gray-400 text-[0.35rem] absolute -bottom-2 left-2 px-2 leading-snug rounded-b-sm",
+              "text-gray-800 z-10 bg-gray-400 text-[0.35rem] absolute -bottom-2 left-2 px-2 leading-snug rounded-b-sm",
             )
               .ap(_.span("", className))
               .ap(_.span("", " - "))
@@ -21,10 +29,14 @@ const header = (name, className, specialization, race, background, level) =>
         ),
     )
     .ap(
-      _.div("flex flex-col px-1 text-gray-300 mr-6")
-        .ap(_.div("text-[0.35rem]", race))
+      _.div("flex flex-col text-gray-300 mr-7")
+        .ap(
+          _.span("flex gap-0.5 ")
+            .ap(_.span("text-[0.35rem]", race))
+            .ap(_.span("text-[0.35rem] text-gray-600", alignment)),
+        )
         .ap(_.hr())
-        .ap(_.div("text-[0.35rem]", background)),
+        .ap(_.span("text-[0.35rem]", background)),
     )
     .ap(
       _.div(
@@ -38,3 +50,6 @@ const header = (name, className, specialization, race, background, level) =>
         )
         .ap(_.span("text-xs text-gray-300 font-bold", level)),
     );
+
+// Smear SVG
+// <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970.25 154.67"><defs><style>.cls-1{fill:#ed1f24;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="banner"><path id="mainShape" class="cls-1" d="M0,154.67V6.42l188.38,0s137.26,9.45,141.43,9.79c0,.14-96.52,6.76-96.52,6.76l47.09,2.24,39.48-3.05L479.43,34s-36.75,2.68-50.19,3.71c0,.29,178.19,14.48,178.19,14.48s34-3.95,34-4.24c-22.33-1.59-74.72-5.66-74.72-5.66l94-6.19s33.14,2.2,46.39,3.18c12.39.92,40.61,2.82,40.61,2.82l-24.34,2.07,35.24,3,47.36-3.62L762.5,40.26l95-6.94s84.83,6.11,96.45,7c0,.06-65.05,4.32-92.07,6.19-.29,0,39.6,3.57,54.16,4.73,0,.19-108.33,6.75-159.44,10.21,40.47,4.1,86.29,8.6,126,12.62,0,.15-41,4.34-58.14,6.16,0,.21,65.56,5.15,93.67,7.41-.2,0-41.27,2.79-56.81,4,0,.23,44.76,3.66,62.76,5.09,0,.11-103.55,7.17-150.95,10.53,0,.25,47.29,3.67,66.36,5.19,0,.1-62.19,4.45-89.84,6.47,0,.27,10.77,2.61,10.77,2.61L532.16,139.22,459.29,134l44.38-3.57L434.1,125l-58.43,4.31,59.76,4.36-123.38,11,44.19,3.14S337.9,149.34,330,150c-9.83.77-59.3,4.72-59.3,4.72Z"/><polygon id="diamondF" class="cls-1" points="552.6 154.33 469.43 147.19 550.72 142.21 633.24 148.52 552.6 154.33"/><polygon id="diamondE" class="cls-1" points="631.14 140.38 741.62 130.66 782.71 133.62 755.63 135.82 812.67 140.14 722.1 146.81 631.14 140.38"/><polygon id="diamondD" class="cls-1" points="812.57 62.87 892.92 57.13 970.25 63.1 894.05 68.76 812.57 62.87"/><path id="diamondC" class="cls-1" d="M480.21,29.59c4.21-.38,71.22-4.68,71.22-4.68l67.15,4.94-68.22,4.87S480.22,29.68,480.21,29.59Z"/><polygon id="diamondB" class="cls-1" points="450.19 23.52 344.58 16.3 449.17 8.62 556.38 16.36 450.19 23.52"/><polygon id="diamondA" class="cls-1" points="297.87 0 350.13 3.9 296.54 7.79 241.43 3.9 297.87 0"/></g></g></svg>
