@@ -1,10 +1,10 @@
 const player = {
-  name: "Rufio Emeraldfoot",
+  name: "Kael Burninger",
   level: 17,
   race: "Harringon",
   class: ["Bard"],
   specialization: ["Swashbuckler"],
-  background: "Celebrity Adventurer's Scion",
+  background: "Celebrity Adventurers Scion",
   alignment: "C/N",
   stats: [17, 12, 16, 19, 10, 9],
   proficientcies: ["Arc", "Inv"],

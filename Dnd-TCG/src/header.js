@@ -5,14 +5,14 @@ const header = (name, className, specialization, race, background, level) =>
     .ap(
       _.section()
         .ap(
-          _.h1("pr-1 w-28 text-xs h-6 flex text-gray-300 items-center").ap(
+          _.h1("pr-1 w-28 text-sm h-6 flex text-gray-300 items-center").ap(
             _.span("", name),
           ),
         )
         .ap(
           _.div("relative").ap(
             _.div(
-              "z-10 bg-gray-300 text-[0.35rem] absolute -bottom-2 left-2 px-2 leading-snug rounded-b-sm",
+              "z-10 bg-gray-400 text-[0.35rem] absolute -bottom-2 left-2 px-2 leading-snug rounded-b-sm",
             )
               .ap(_.span("", className))
               .ap(_.span("", " - "))
@@ -28,11 +28,11 @@ const header = (name, className, specialization, race, background, level) =>
     )
     .ap(
       _.div(
-        "bg-gray-600 absolute flex justify-center items-center rounded-full right-1 top-2 w-7 h-7 border-2 border-gray-900 border-solid text-center leading-4 z-10",
+        "bg-gray-700 absolute flex justify-center items-center rounded-full right-1 top-2 w-7.5 h-7.5 border-2 border-gray-950 border-solid text-center leading-4 z-10",
       )
         .ap(
           _.abbr(
-            "px-[0.5em] py-0.5 absolute -left-2 -top-1 bg-gray-500 rounded-full text-[0.3rem] border border-gray-900 border-solid text-gray-200 leading-snug",
+            "px-[0.5em] py-0.5 absolute -left-2 -top-1 bg-gray-500 rounded-full text-[0.3rem] border border-gray-950 border-solid text-gray-200 leading-snug",
             "lvl",
           ),
         )
