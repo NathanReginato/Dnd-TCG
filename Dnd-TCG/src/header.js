@@ -5,7 +5,7 @@ const header = (name, className, specialization, race, background, level) =>
     .ap(
       _.section()
         .ap(
-          _.h1("pr-1 w-28 text-sm h-6 flex text-gray-300 items-center").ap(
+          _.h1("pr-1 w-28 text-md h-6 flex text-gray-300 items-center").ap(
             _.span("", name),
           ),
         )

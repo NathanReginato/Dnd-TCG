@@ -1,10 +1,12 @@
 const addAsideRootEl = addEl(root("aside"));
 
 const aside = (ac, iniative, speed) =>
-  _.div("absolute z-10 flex flex-col top-4.5 unded-xs px-2 gap-2")
+  _.div(
+    "absolute z-10 flex flex-col justify-center items-center top-4.5 px-1.5",
+  )
     .ap(
       _.div(
-        "flex flex-col justify-center text-gray-300 w-[1.5em] h-[1.5em] text-center",
+        "flex flex-col justify-center text-gray-300 w-[1.5em] h-[1.5em] text-center mb-2.5",
       )
         .ap(
           _.div("relative leading-snug text-xs")
@@ -23,7 +25,7 @@ const aside = (ac, iniative, speed) =>
     )
     .ap(
       _.div(
-        "relative flex justify-center items-center bg-gray-700 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid",
+        "relative flex justify-center items-center bg-gray-700 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid mb-1.5",
       )
         .ap(
           _.div("text-gray-300 flex justify-center items-center")
@@ -38,7 +40,7 @@ const aside = (ac, iniative, speed) =>
     )
     .ap(
       _.div(
-        "relative flex justify-center items-center bg-gray-700 rounded-xs w-[1.5em] h-[1.5em] text-center border-gray-300 border-[0.1rem] border-solid",
+        "relative rounded-full flex justify-center items-center bg-gray-700 w-[1.65em] h-[1.65em] text-center border-gray-300 border-[0.1rem] border-solid",
       )
         .ap(
           _.div("text-gray-300 flex justify-center items-center").ap(
@@ -51,42 +53,3 @@ const aside = (ac, iniative, speed) =>
           ).ap(_.span("no-underline", "Spd")),
         ),
     );
-
-// <div class="">
-//   <div class="">
-//     <div class="">
-//       <span id="armor-class">25</span>
-//       <div class="">
-//         <abbr class="" title="Armor Class">
-//           AC
-//         </abbr>
-//       </div>
-//     </div>
-//     <div class=""></div>
-//   </div>
-//   <div class="">
-//     <div class="">
-//       <span class="">+</span>
-//       <span id="initative" class="text-xs align-middle">
-//         3
-//       </span>
-//     </div>
-//     <div class="">
-//       <abbr class="" title="Initative">
-//         Init
-//       </abbr>
-//     </div>
-//   </div>
-//   <div class="">
-//     <div class="text-gray-400 flex justify-center items-center">
-//       <span id="speed" class="text-xs align-middle">
-//         60
-//       </span>
-//     </div>
-//     <div class="absolute z-50 text-gray-400  -bottom-[0.025rem] w-full">
-//       <abbr class="no-underline" title="Initative">
-//         Speed
-//       </abbr>
-//     </div>
-//   </div>
-// </div>;
